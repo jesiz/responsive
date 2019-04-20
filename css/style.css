@@ -1,0 +1,291 @@
+header,footer{
+	background: white;
+	color: black;
+}
+
+header{
+	min-height: 20vh;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1{
+	text-align: center;
+	font-size: 3rem;
+	line-height: 5rem;
+	font-family: 'Roboto', sans-serif;
+	padding:20px;
+}
+
+h2 {
+	font-size: 1.8rem;
+	line-height: 3.375rem;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 30px;
+}
+
+h3{
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	color:black;
+}
+
+h4{
+	font-size: 1rem;
+	line-height: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.nav{
+    border:1px solid darkgrey;
+    border-width:1px 0;
+    list-style:none;
+    margin:6px;
+    padding:0;
+    text-align:center;
+}
+
+.nav li{
+    display:inline-block;
+    padding:0px;
+		background: black;
+}
+
+li a {
+  text-decoration: none;
+	display: block;
+  color: white;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+li a.active {
+  background-color: black;
+  color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: white;
+	color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+	.nav {
+		display:flex;
+		overflow: hidden;
+		background-color: white;
+		position: 50%;
+
+	}
+	.nav li {
+		display:inline;
+		background: white;
+		}
+
+	.nav a {
+		display: block;
+		color: darkgrey;
+		text-align: center;
+		padding: 10px 35px;
+		text-decoration: none;
+		font-size: 18px;
+	}
+
+	li a.active {
+	  background-color: white;
+	  color: darkgrey;
+	}
+
+	li a:hover:not(.active) {
+		background-color: white;
+		color: black;
+	}
+}
+
+@media screen and (max-width: 600px) {
+.nav{
+	  display: flex;
+	  flex-direction: column;
+}
+
+.nav li{
+	display: block;
+	width:100%;
+	background: blue;
+	text-align: center;
+}
+
+li a {
+  text-decoration: none;
+	display: row;
+
+ }
+
+ li a.active {
+  background-color: black;
+  color: white;
+ }
+
+ li a:hover:not(.active) {
+	background-color: white;
+	color: black;
+ }
+
+}
+
+
+a.skip{
+	left:-999px;
+	position:absolute;
+	top:auto;
+	overflow:hidden;
+}
+
+a.skip:focus{
+	color: transparent;
+	background-color:#fff;
+	left: -999px;
+	top: auto;
+	height: auto;
+	overflow:auto;
+	padding:5px;
+	border-radius: 15px;
+	text-align:center;
+}
+
+main{
+		margin:5px;
+		padding:0;
+	  border:0;
+	  outline:0;
+	  font-size:100%;
+	  line-height: 1.2;
+	  vertical-align:baseline;
+	  background:transparent;
+		text-align:center;
+	}
+
+
+body{
+	margin-top: 10px;
+    background-color:transparent;
+}
+
+.content{
+	  width:90%;
+	  margin:50px;
+	  padding:0;
+	  border:0;
+	  outline:0;
+	  font-size:100%;
+	  line-height: 1.2;
+	  vertical-align:baseline;
+	  background:transparent;
+	}
+
+.des{
+	  text-align:left;
+	}
+
+.row{
+	flex-direction: row;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	padding:10px;
+}
+
+.column{
+  flex:50%;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.column img{
+  margin: 4px;
+  vertical-align: middle;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  max-width: 99%;
+}
+
+.column1{
+  flex:50%;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.column1 img{
+  margin: 4px;
+  vertical-align: middle;
+  max-width: 99%;
+}
+
+.background{
+  padding:80px;
+  height:150px;
+  text-align:left;
+  background-image: url("../images/uroomi_back.png");
+  background-repeat: no-repeat;
+  color:white;
+  background-size:cover;
+}
+
+.background1{
+  padding:80px;
+  height:150px;
+  text-align:left;
+  background-image: url("../images/veer_background.jpg");
+  background-repeat: no-repeat;
+  color:white;
+  background-size:cover;
+}
+
+.gallery-flex {
+	flex: 1 0 24rem;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin:4px;
+}
+
+.gallery-item {
+	object-fit: cover;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	max-width: 48%;
+}
+
+.fa-cat {
+  font-size: 40px;
+  color:lightpink
+}
+
+
+/*nav ul{
+		display: flex;
+		flex-direction: row;
+}
+nav ul li{
+	display: inline-block;
+	width:25%;
+	background: blue;
+	padding: 10px;
+	min-height: 25px;
+	line-height: 25px;
+	border-width: 2px;
+	text-align: center;
+	background-image: linear-gradient(to bottom right, purple, lightpink);
+	}
