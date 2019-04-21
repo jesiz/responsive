@@ -47,8 +47,6 @@ h4{
 
 
 .nav{
-	  border:1px solid darkgrey;
-		border-width:1px 0;
 	  flex-direction: column;
 		text-align:center;
 }
@@ -64,14 +62,15 @@ h4{
 li a {
   text-decoration: none;
 	display: block;
-  color: darkgrey;
+	background: #474040;
+  color: white;
   padding: 10px 16px;
   font-size: 18px;
  }
 
  li a.active {
   background-color: white;
-  color: darkgrey;
+  color: black;
  }
 
  li a:hover:not(.active) {
@@ -138,7 +137,7 @@ li a {
 			background:white;
 		  text-decoration: none;
 			display: block;
-		  color: darkgrey;
+		  color: black;
 		  padding: 16px 31px;
 		  font-size: 18px;
 		}
@@ -146,7 +145,7 @@ li a {
 
 		li a.active {
 		  background-color: white;
-		  color: black;
+		  color: darkgrey;
 		}
 
 		li a:hover:not(.active) {
@@ -210,7 +209,7 @@ li a.active {
 
 li a:hover:not(.active) {
 	background-color: white;
-	color: darkgrey;
+	color: #474040;
 }
 
 .row{
@@ -255,7 +254,6 @@ a.skip:focus{
 	overflow:auto;
 	padding:5px;
 	border-radius: 15px;
-	border:4px solid yellow;
 	text-align:center;
 	font-size:1.2em;
 }
@@ -285,7 +283,7 @@ body{
   text-align:left;
   background-image: url("../images/uroomi_back.png");
   background-repeat: no-repeat;
-  color:white;
+  color:black;
   background-size:cover;
 }
 
@@ -295,7 +293,7 @@ body{
   text-align:left;
   background-image: url("../images/veer_background.jpg");
   background-repeat: no-repeat;
-  color:white;
+  color:black;
   background-size:cover;
 }
 
